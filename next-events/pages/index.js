@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
 import { getFeaturedEvents  } from '@/dummy-data'
+import EventList from '@/components/events/event-list'
 
 
 
@@ -20,7 +21,7 @@ export default function Home() {
       </Head>
       <div>
         <ul>
-
+          <EventList items={featuredEvents}/>
         </ul>
       </div>
       
